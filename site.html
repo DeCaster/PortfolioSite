@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/987e9f26c4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Murad <span>Eyvazli</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Anasayfa</a></li>
+                    <li><a href="#about">Hakkimda</a></li>
+                    <li><a href="#contact">Ilestisim</a></li>
+                    <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+               <h1>Merhaba, Ben <span>Murad</span>. Sayfama <br> hoş geldiniz!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MuradEyvazli.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Hakkımda</h1>
+                    <p class="col2-p">Adım <span class="spam">Murad</span> ve Azerbaycanlıyım. Şu an SDU'da bilgisayar mühendisliği okuyorum ve 19 yaşındayım. Bilgisayarlarla ilgilenmeyi seviyorum ve bu alanda kendimi geliştirmeye çalışıyorum. Azerice, Türkçe, İngilizce ve Rusça konuşabiliyorum. Okul hayatımın yanı sıra hobilerim arasında spor ve kitap okuma da yer alıyor. Gelecekte, bilgisayar mühendisliği alanında başarılı bir kariyer yapmayı hedefliyorum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Beceriklerim</p>
+                        <p class="tab-links" onclick="openTab('experience')">Tecrübem</p>
+                        <p class="tab-links" onclick="openTab('education')">Eğitim</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML-CSS-JavaScript</span><br>Web/App arayüzleri tasarlama</li>
+                            <li><span>Swift</span><br>iOS uygulama geliştirme</li>
+                            <li><span>Web Geliştirme</span><br>Web uygulama geliştirme</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1</span> yıl tam yığın <br> geliştirici deneyimim var.</li>
+                            <li><span>Frontend</span> teknolojileri konusundaki bilgilerim <br> arasında HTML, CSS ve JavaScript bulunuyor.</li>
+                            <li>Backend <span>tarafta</span> da PHP, Python ve Node.js <br> gibi dillerle çalışma fırsatım oldu.</li>
+                            <li><span>Ayrıca</span>, PostgreSQL, MySQL ve MongoDB<br> gibi veritabanlarıyla da deneyim kazandım.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Şu anda <span>SDU</span>'da 3. sınıf öğrencisiyim.</li>
+                            <li>Eğitimim hakkında daha <span>fazla</span> detay sormak isterseniz, lütfen sorularınızı sormaktan çekinmeyin.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">İletişim</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>muradeyvazli18@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>+905369965484</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100086459786435&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/jojodelacostee?s=21&t=sgGZN8tn6BJfB2seWgBKAA"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/murad.eyvzli?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/DeCaster"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name.." required>
+                        <input type="email" name="Email" placeholder="Your Email.." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message.."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Tüm Bilgiler koruma altındadır ©</p>
+        </div>
+
+    </div>
+        
+
+</body>
+</html>
