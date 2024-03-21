@@ -20,5 +20,3 @@ Kullanım
 Ana sayfada, çeşitli menü sekmeleri arasında gezinebilirsiniz. Her sekme, farklı bir içerik kategorisini temsil eder (Ör: Hakkımda, Projelerim, İletişim).
 İçerikler, ilgili sekme tıklandığında görüntülenir.
 Lisans
-
-Bu proje [LİSANS] altında lisanslanmıştır. Daha fazla bilgi için 'LICENSE' dosyasına bakınız.
